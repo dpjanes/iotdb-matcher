@@ -1,23 +1,29 @@
 {
-  "name": "iotdb-matcher",
-  "version": "1.0.0",
-  "description": "Match human strings better",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dpjanes/iotdb-matcher.git"
-  },
-  "keywords": [
-    "IOTDB",
-    "stemming"
-  ],
-  "author": "David Janes <davidjanes@davidjanes.com>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/dpjanes/iotdb-matcher/issues"
-  },
-  "homepage": "https://github.com/dpjanes/iotdb-matcher#readme"
+    "author": "David Janes <davidjanes@davidjanes.com>", 
+    "bugs": {
+        "url": "https://github.com/dpjanes/iotdb-matcher/issues"
+    }, 
+    "dependencies": {
+        "double-metaphone": "~1.0.0", 
+        "iotdb-helpers": "~3.0.18", 
+        "jaro-winkler": "~0.2.8", 
+        "stemmer": "~1.0.0"
+    }, 
+    "description": "Match human strings better", 
+    "homepage": "https://github.com/dpjanes/iotdb-matcher#readme", 
+    "keywords": [
+        "IOTDB", 
+        "stemming"
+    ], 
+    "license": "Apache-2.0", 
+    "main": "index.js", 
+    "name": "iotdb-matcher", 
+    "repository": {
+        "type": "git", 
+        "url": "git+https://github.com/dpjanes/iotdb-matcher.git"
+    }, 
+    "scripts": {
+        "test": "mocha test"
+    }, 
+    "version": "1.0.0"
 }
