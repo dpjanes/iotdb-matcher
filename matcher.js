@@ -92,6 +92,15 @@ const matcher = (_initd) => {
             .slice(0, paramd.n);
     };
 
+    self.best = (_word, _paramd) => {
+        const results = self.find(_word, _paramd);
+        if (results.length) {
+            return results[0][0];
+        } else {
+            return null;
+        }
+    };
+
     return self;
 };
 
@@ -100,14 +109,3 @@ const matcher = (_initd) => {
  */
 exports.matcher = matcher;
 
-const m = matcher();
-m.add("beach");
-m.add("beaches");
-m.add("young");
-m.add("skating rink");
-m.add("skating rinks");
-// console.log(m.find("peach"));
-// console.log(m.find("beach"));
-console.log(m.find("the    beach"));
-// console.log(m.find("yonge"));//, { threshold: 0 }));
-// console.log(m.find("rink"));
