@@ -13,17 +13,19 @@
     "homepage": "https://github.com/dpjanes/iotdb-matcher#readme", 
     "keywords": [
         "IOTDB", 
-        "stemming"
+        "stemming", 
+        "double metapone", 
+        "jaro winkler"
     ], 
     "license": "Apache-2.0", 
     "main": "index.js", 
     "name": "iotdb-matcher", 
     "repository": {
         "type": "git", 
-        "url": "git+https://github.com/dpjanes/iotdb-matcher.git"
+        "url": "https://github.com/dpjanes/iotdb-matcher"
     }, 
     "scripts": {
         "test": "mocha test"
     }, 
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
